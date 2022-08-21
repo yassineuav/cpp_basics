@@ -19,12 +19,19 @@ int main(){
 
     string name = "Yassine";
     for(char ch: name){
-        cout << ch << ", ";
+        cout << "'" << ch << "' ,";
     }
 
     cout << endl;
 
-    int temp
-
+    int tempratures[] = {60,12,23,32,41,15,16};
+    double sum = 0;
+    short count = sizeof(tempratures)/sizeof(int);
+    for(int temprature: tempratures)
+        sum += temprature;
+    
+    double average = sum / count;
+    cout << average;
+ 
     return 0;
 }
